@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPUTER: Odd One Out</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <main class="main-content">
+            <header class="content-header">
+                <h1>COMPUTER: Odd One Out</h1>
+                <!-- <p>Select the option that does not fit with the others in each category.</p> -->
+            </header>
+
+            <form id="quiz-form" onsubmit="submitTest(event)">
+                <div id="questions-wrapper"></div>
+
+                <div class="action-panel" id="action-panel">
+                    <button type="submit" class="submit-btn">Submit Test</button>
+                </div>
+            </form>
+
+            <div class="results-card" id="results-card">
+                <h2>Test Assessment Result</h2>
+                <div class="score-badge" id="score-badge">0/4</div>
+                <p class="performance-text" id="performance-text">Keep reviewing your history basics!</p>
+                <button type="button" class="restart-btn" onclick="resetTest()">Retake Test</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
